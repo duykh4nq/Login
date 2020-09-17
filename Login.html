@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="Register.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()" style="padding-left: 40px;">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()" style="padding-left: 75px;">Register</button>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/accounts/login/?hl=vi" target="_blank" class="fab fa-instagram"></a>
+                <a href="https://www.facebook.com/" target="_blank" class="fab fa-facebook-square"></a>
+                <a href="https://twitter.com/login?lang=vi" target="_blank" class="fab fa-twitter-square"></a>
+                <a href="https://login.yahoo.com/?.intl=us&lang=vi-VN&.src=ym" target="_blank" class="fab fa-yahoo"></a>
+            </div>
+            
+            <form action="" id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" id="username_">
+                <input type="password" class="input-field" placeholder="Enter Password" id="password_">
+                <input type="password" class="input-field" placeholder="Enter Check Password" id="re-password">
+                <input type="checkbox" class="check-box"><p>I agree to the terms & conditions</p>
+                <button type="submit" class="submit-btn" onclick="return validate2()"><b>REGISTER</b></button>
+            </form>
+            <form action="" id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" id="username">
+                <input type="password" class="input-field" placeholder="Enter Password" id="password">
+                <input type="checkbox" class="check-box"><p>Remember Password</p>
+                <button type="submit" class="submit-btn" onclick="return validate1()"><b>LOG IN</b></button>
+            </form>
+        </div>
+       
+    </div>
+    <script language="javascript" src="Register.js"></script>
+</body>
+</html>
